@@ -87,7 +87,7 @@
     opacity: 1;
     cursor: pointer;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .submit{
         width: 50px;
         font-size: 15px;
