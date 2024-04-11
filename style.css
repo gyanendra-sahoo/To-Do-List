@@ -26,6 +26,8 @@
     padding: 0 30px ;
     background-color: #d0d1ff;
     font-size: 17px;
+    border: 2px solid black;
+    outline: none;
 }
 .submit {
     border-top-right-radius: 20px;
@@ -35,6 +37,7 @@
     background-color: #c0fdff;
     font-size: 17px;
     font-weight: 600;
+    border: 2px solid black;
 }
 .content {
     height: 80%;
@@ -95,5 +98,12 @@
     .search input {
         font-size: 14px;
         padding: 0 30px;
+    }
+    .del{
+        opacity: 1;
+        width: 50px;
+    }
+    .end-content {
+        width: 70vw;
     }
 }
