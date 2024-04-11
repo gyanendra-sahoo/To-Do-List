@@ -7,12 +7,15 @@ submit.addEventListener("click",function() {
     if(input.value==""){
         input.placeholder="Sorry enter the valid task";
     }else{
+        let div = document.createElement('div');
         let li = document.createElement('li');
         let delBtn = document.createElement('button');
         delBtn.innerText="delete";
         li.innerText=input.value;
-        ul.appendChild(li)
-        li.appendChild(delBtn);
+        ul.appendChild(div);
+        div.appendChild(li);
+        div.appendChild(delBtn);
+        div.classList.add("itembox");
         delBtn.classList.add("del");
         input.value="";
         console.log("added");
@@ -21,6 +24,8 @@ submit.addEventListener("click",function() {
 });
 
 ul.addEventListener("click",function(e) {
-    let par = e.target.parentNode;
-    ul.removeChild(par);
-})
+    if(e.target.nodeName == "BUTTON"){
+    let listitem =e.target.parentElement;
+    listitem.remove();
+    }
+});
